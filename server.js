@@ -3,6 +3,7 @@ const { parse } = require('url');
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
+const port = process.env.PORT || 3001;
 const app = next({
     dev,
     dir: './client',
@@ -21,7 +22,7 @@ app.prepare().then(() => {
             console.log(error);
             process.exit(1);
         });
-    }).listen(3000, (err) => {
+    }).listen(port, (err) => {
         if (err) throw err
         console.log('> Ready on http://localhost:3000')
     })

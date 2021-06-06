@@ -35,7 +35,7 @@ We can use username and password to login or use access token
    --env=DRONE_RPC_SECRET \
    --env=DRONE_SERVER_HOST \
    --env=DRONE_SERVER_PROTO \
-   --publish=8080:80 \
+   --publish=4000:80 \
    --restart=always \
    --detach=true \
    --name=drone \
@@ -46,7 +46,7 @@ We can use username and password to login or use access token
   docker run \
     --volume=/var/lib/drone:/data \
     --env-file=.env.server \
-    --publish=8080:80 \
+    --publish=4000:80 \
     --restart=always \
     --detach=true \
     --name=drone \
@@ -86,3 +86,6 @@ We can use username and password to login or use access token
     drone/drone-runner-docker:1
  </code>
 
+# GIT authentication by ssh
+
+Run <code>ssh-add ~/.ssh/github_nnsan1989</code> to authenticate

@@ -6,7 +6,9 @@
   "scripts": {
     "build:client": "cd client && npm run build",
     "start": "NODE_ENV=production node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:client": "cd client && npm run test",
+    "test:server": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:client"
   },
   "repository": {
     "type": "git",

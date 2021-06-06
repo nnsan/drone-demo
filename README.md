@@ -41,7 +41,7 @@ We can use username and password to login or use access token
    --name=drone \
    drone/drone:1
  </code>
-1. Or we can use <code>--env-file</code> 
+1. Or we can use <code>--env-file</code> by this command
  <code>
   docker run \
     --volume=/var/lib/drone:/data \
@@ -52,6 +52,10 @@ We can use username and password to login or use access token
     --name=drone \
     drone/drone:1
   </code>
+1. Open browser with url is <code>{{DRONE_SERVER_PROTO}}://{{DRONE_SERVER_HOST}}</code> and it will redirect to github login page
+1. The Drone Dashboard will show after login successfully and you need to choose which repository is active
+1. Access to the Webhook setting of chosen repository to configure relevant event.
+1. We need and .drone.yml file in the root directory of appropriate repository to runner can execute pipeline
 
 ## Setup Drone Runner
 
@@ -81,3 +85,4 @@ We can use username and password to login or use access token
     --name drone-runner \
     drone/drone-runner-docker:1
  </code>
+

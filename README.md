@@ -86,3 +86,6 @@ We can use username and password to login or use access token
     drone/drone-runner-docker:1
  </code>
 
+# GIT authentication by ssh
+
+Run <code>ssh-add ~/.ssh/github_nnsan1989</code> to authenticate

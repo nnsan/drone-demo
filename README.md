@@ -89,3 +89,12 @@ We can use username and password to login or use access token
 # GIT authentication by ssh
 
 Run <code>ssh-add ~/.ssh/github_nnsan1989</code> to authenticate
+
+Configure the protect branches to disable merge button when pipeline run fail (all steps in pipeline should return exit code zero => it's pass, otherwise it's fail)
+
+1. Access Repository => Setting
+1. Select <code>Branches</code> on the left menu
+1. Click on Add Rule on <code>Branch protect rule</code>
+1. Check on <code>Require status checks to pass before merging</code> and <code>Require branches to be up to date before merging</code>
+1. The Branch name pattern should match to <code>master</code> branch or <code>main</code> branch
+1. We can setup to require review by check on <code>Require pull request reviews before merging</code>

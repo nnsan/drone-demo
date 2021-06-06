@@ -47,6 +47,7 @@ We can use username and password to login or use access token
     --volume=/var/lib/drone:/data \
     --env-file=.env.server \
     --publish=8080:80 \
+    --publish=443:443 \
     --restart=always \
     --detach=true \
     --name=drone \

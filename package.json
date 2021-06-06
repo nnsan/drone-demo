@@ -1,0 +1,26 @@
+{
+  "name": "drone-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "cd client && npm run build",
+    "start": "NODE_ENV=production node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnsan/drone-demo.git"
+  },
+  "author": "San Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnsan/drone-demo/issues"
+  },
+  "homepage": "https://github.com/nnsan/drone-demo#readme",
+  "dependencies": {
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

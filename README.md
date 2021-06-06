@@ -36,7 +36,6 @@ We can use username and password to login or use access token
    --env=DRONE_SERVER_HOST \
    --env=DRONE_SERVER_PROTO \
    --publish=4000:80 \
-   --publish=443:443 \
    --restart=always \
    --detach=true \
    --name=drone \

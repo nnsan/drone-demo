@@ -35,7 +35,7 @@ We can use username and password to login or use access token
    --env=DRONE_RPC_SECRET \
    --env=DRONE_SERVER_HOST \
    --env=DRONE_SERVER_PROTO \
-   --publish=8080:80 \
+   --publish=4000:80 \
    --publish=443:443 \
    --restart=always \
    --detach=true \
@@ -47,7 +47,7 @@ We can use username and password to login or use access token
   docker run \
     --volume=/var/lib/drone:/data \
     --env-file=.env.server \
-    --publish=8080:80 \
+    --publish=4000:80 \
     --restart=always \
     --detach=true \
     --name=drone \
